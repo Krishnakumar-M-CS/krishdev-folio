@@ -73,10 +73,10 @@ const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                      className="border-teal text-teal hover:bg-teal hover:text-teal-foreground transition-smooth"
                       onClick={() => window.open(project.github, "_blank")}
                     >
-                      <Github className="w-4 h-4 mr-2" />
+                      <Github className="w-4 h-4 mr-2 text-teal" />
                       Code
                     </Button>
                     <Button
@@ -84,7 +84,7 @@ const Projects = () => {
                       className="hero-gradient hover:opacity-90 transition-smooth"
                       onClick={() => window.open(project.demo, "_blank")}
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <ExternalLink className="w-4 h-4 mr-2 text-white" />
                       Demo
                     </Button>
                   </div>

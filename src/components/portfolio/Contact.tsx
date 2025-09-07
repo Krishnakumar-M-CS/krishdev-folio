@@ -46,12 +46,12 @@ const Contact = () => {
                       className="w-full h-auto p-6 flex flex-col items-center space-y-4 hover:bg-primary/10 transition-smooth group"
                       onClick={() => window.open(contact.href, contact.icon === Mail ? "_self" : "_blank")}
                     >
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
-                        <IconComponent className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-smooth" />
+                      <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center group-hover:bg-teal group-hover:text-teal-foreground transition-smooth">
+                        <IconComponent className="w-6 h-6 text-teal group-hover:text-teal-foreground transition-smooth" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">{contact.label}</h3>
-                        <p className="text-sm text-muted-foreground group-hover:text-primary transition-smooth">
+                        <p className="text-sm text-muted-foreground group-hover:text-teal transition-smooth">
                           {contact.value}
                         </p>
                       </div>

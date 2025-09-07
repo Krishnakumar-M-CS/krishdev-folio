@@ -62,7 +62,7 @@ const Header = () => {
             onClick={toggleTheme}
             className="hover:bg-primary/10"
           >
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {isDark ? <Sun className="h-5 w-5 text-teal hover:text-teal-foreground transition-smooth" /> : <Moon className="h-5 w-5 text-navy hover:text-primary transition-smooth" />}
           </Button>
         </nav>
 
@@ -74,14 +74,14 @@ const Header = () => {
             onClick={toggleTheme}
             className="hover:bg-primary/10"
           >
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {isDark ? <Sun className="h-5 w-5 text-teal hover:text-teal-foreground transition-smooth" /> : <Moon className="h-5 w-5 text-navy hover:text-primary transition-smooth" />}
           </Button>
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isMenuOpen ? <X className="h-5 w-5 text-primary" /> : <Menu className="h-5 w-5 text-primary" />}
           </Button>
         </div>
 
