@@ -43,6 +43,14 @@ All colors MUST be HSL.
     --navy-foreground: 0 0% 100%;
     --teal: 179 85% 36%;
     --teal-foreground: 0 0% 100%;
+    --emerald: 160 84% 39%;
+    --emerald-foreground: 0 0% 100%;
+    --blue: 221 83% 53%;
+    --blue-foreground: 0 0% 100%;
+    --purple: 262 83% 58%;
+    --purple-foreground: 0 0% 100%;
+    --orange: 25 95% 53%;
+    --orange-foreground: 0 0% 100%;
     --hero-gradient: linear-gradient(135deg, hsl(179 85% 36%), hsl(179 85% 45%));
     --card-shadow: 0 4px 6px -1px hsl(179 85% 36% / 0.1), 0 2px 4px -1px hsl(179 85% 36% / 0.06);
     --hero-shadow: 0 10px 25px -5px hsl(179 85% 36% / 0.3);

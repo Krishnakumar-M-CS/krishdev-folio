@@ -2,15 +2,15 @@ import { Badge } from "@/components/ui/badge";
 
 const Skills = () => {
   const skills = [
-    "HTML",
-    "CSS", 
-    "JavaScript",
-    "Java",
-    "DSA",
-    "SQL",
-    "Python",
-    "Git",
-    "GitHub"
+    { name: "HTML", color: "orange" },
+    { name: "CSS", color: "blue" },
+    { name: "JavaScript", color: "orange" },
+    { name: "Java", color: "purple" },
+    { name: "DSA", color: "emerald" },
+    { name: "SQL", color: "blue" },
+    { name: "Python", color: "emerald" },
+    { name: "Git", color: "orange" },
+    { name: "GitHub", color: "navy" }
   ];
 
   return (
@@ -27,9 +27,9 @@ const Skills = () => {
                 <Badge
                   key={index}
                   variant="secondary"
-                  className="px-6 py-3 text-lg font-medium bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth cursor-default border border-primary/20 rounded-full"
+                  className={`px-6 py-3 text-lg font-medium bg-${skill.color}/10 text-${skill.color} hover:bg-${skill.color} hover:text-${skill.color}-foreground transition-smooth cursor-default border border-${skill.color}/20 rounded-full`}
                 >
-                  {skill}
+                  {skill.name}
                 </Badge>
               ))}
             </div>

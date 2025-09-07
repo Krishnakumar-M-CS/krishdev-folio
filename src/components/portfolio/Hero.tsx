@@ -24,9 +24,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Name and Title */}
+          {/* Greeting and Name */}
+          <p className="text-xl md:text-2xl text-muted-foreground mb-2">
+            My profile and Hi I'm
+          </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-foreground">
-            Krishnakumar M.
+            Krishnakumar
           </h1>
           <h2 className="text-xl md:text-2xl text-primary font-semibold mb-6">
             BSc Computer Science Student

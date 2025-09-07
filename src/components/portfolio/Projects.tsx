@@ -73,18 +73,18 @@ const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="border-teal text-teal hover:bg-teal hover:text-teal-foreground transition-smooth"
+                      className="border-purple text-purple hover:bg-purple hover:text-purple-foreground transition-smooth"
                       onClick={() => window.open(project.github, "_blank")}
                     >
-                      <Github className="w-4 h-4 mr-2 text-teal" />
+                      <Github className="w-4 h-4 mr-2 text-purple" />
                       Code
                     </Button>
                     <Button
                       size="sm"
-                      className="hero-gradient hover:opacity-90 transition-smooth"
+                      className="bg-emerald text-emerald-foreground hover:bg-emerald/90 transition-smooth"
                       onClick={() => window.open(project.demo, "_blank")}
                     >
-                      <ExternalLink className="w-4 h-4 mr-2 text-white" />
+                      <ExternalLink className="w-4 h-4 mr-2 text-emerald-foreground" />
                       Demo
                     </Button>
                   </div>
