@@ -1,73 +1,201 @@
-# Welcome to your Lovable project
+# Krishnakumar M. - Portfolio Website
 
-## Project info
+A modern, clean, and responsive personal portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/caad60a0-56cd-4889-a1f2-cefd539e8f6b
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Dark/Light Mode**: Automatic theme detection with manual toggle
+- **Smooth Scrolling**: Seamless navigation between sections
+- **Modern UI**: Clean design with subtle animations and shadows
+- **Performance Optimized**: Lazy loading images and optimized assets
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
 
-There are several ways of editing your application.
+## 🚀 Live Demo
 
-**Use Lovable**
+Visit the live portfolio: [Your Portfolio URL]
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/caad60a0-56cd-4889-a1f2-cefd539e8f6b) and start prompting.
+## 📱 Sections
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Hero Section** - Introduction with profile picture and call-to-action
+2. **About Me** - Professional bio and background
+3. **Skills** - Technical skills and technologies
+4. **Projects** - Showcase of 4 key projects with links
+5. **Resume** - Download section for CV/Resume
+6. **Contact** - Email and social media links
+7. **Footer** - Copyright information
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and dev server
+- **Lucide React** - Beautiful icons
+- **React Router** - Client-side routing
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🏃‍♂️ Running Locally
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd portfolio-website
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the portfolio
+
+### Building for Production
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist` directory.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Deployment
 
-**Use GitHub Codespaces**
+### Vercel (Recommended)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Install Vercel CLI**
+   ```bash
+   npm i -g vercel
+   ```
 
-## What technologies are used for this project?
+2. **Deploy to Vercel**
+   ```bash
+   vercel
+   ```
 
-This project is built with:
+3. **Follow the prompts** to complete deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Netlify
 
-## How can I deploy this project?
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/caad60a0-56cd-4889-a1f2-cefd539e8f6b) and click on Share -> Publish.
+2. **Deploy the `dist` folder** to Netlify via their web interface or CLI
 
-## Can I connect a custom domain to my Lovable project?
+### GitHub Pages
 
-Yes, you can!
+1. **Install gh-pages**
+   ```bash
+   npm install --save-dev gh-pages
+   ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. **Add deploy script** to package.json:
+   ```json
+   {
+     "scripts": {
+       "deploy": "gh-pages -d dist"
+     }
+   }
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+3. **Build and deploy**
+   ```bash
+   npm run build
+   npm run deploy
+   ```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   └── portfolio/          # Portfolio-specific components
+│       ├── Header.tsx      # Navigation header
+│       ├── Hero.tsx        # Hero section
+│       ├── About.tsx       # About section
+│       ├── Skills.tsx      # Skills section
+│       ├── Projects.tsx    # Projects section
+│       ├── Resume.tsx      # Resume section
+│       ├── Contact.tsx     # Contact section
+│       └── Footer.tsx      # Footer
+├── pages/
+│   ├── Index.tsx          # Main portfolio page
+│   ├── Portfolio.tsx      # Portfolio layout
+│   └── NotFound.tsx       # 404 page
+├── assets/                # Images and static assets
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+└── styles/
+    └── index.css          # Global styles and design tokens
+```
+
+## 🎨 Customization
+
+### Colors and Theming
+
+The design system is defined in `src/index.css`. Key color variables:
+
+- `--primary`: Teal accent color (HSL: 179, 85%, 36%)
+- `--navy`: Dark navy for text (HSL: 215, 86%, 14%)
+- `--background`: Dynamic background (light/dark)
+
+### Content Updates
+
+1. **Personal Information**: Update content in each component file
+2. **Projects**: Modify the projects array in `Projects.tsx`
+3. **Skills**: Update the skills array in `Skills.tsx`
+4. **Profile Image**: Replace `src/assets/profile.jpg`
+5. **Resume**: Add your resume PDF to `public/assets/resume.pdf`
+
+### Adding New Sections
+
+1. Create a new component in `src/components/portfolio/`
+2. Import and add it to `src/pages/Portfolio.tsx`
+3. Update navigation in `src/components/portfolio/Header.tsx`
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file based on `.env.example`:
+
+```env
+# Add any environment variables here
+# VITE_API_URL=your-api-url
+```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](issues-url).
+
+## 📧 Contact
+
+Krishnakumar M. - [krish@example.com](mailto:krish@example.com)
+
+Project Link: [Repository URL]
+
+---
+
+⭐ Star this repo if you find it helpful!
