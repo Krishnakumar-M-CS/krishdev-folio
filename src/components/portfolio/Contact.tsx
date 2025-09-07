@@ -7,22 +7,19 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       value: "krish@example.com",
-      href: "mailto:krish@example.com",
-      color: "orange"
+      href: "mailto:krish@example.com"
     },
     {
       icon: Github,
       label: "GitHub",
       value: "github.com/krishnakumar",
-      href: "https://github.com/krishnakumar",
-      color: "navy"
+      href: "https://github.com/krishnakumar"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/krishnakumar",
-      href: "https://linkedin.com/in/krishnakumar",
-      color: "blue"
+      href: "https://linkedin.com/in/krishnakumar"
     }
   ];
 
@@ -49,12 +46,12 @@ const Contact = () => {
                       className="w-full h-auto p-6 flex flex-col items-center space-y-4 hover:bg-primary/10 transition-smooth group"
                       onClick={() => window.open(contact.href, contact.icon === Mail ? "_self" : "_blank")}
                     >
-                      <div className={`w-12 h-12 bg-${contact.color}/10 rounded-full flex items-center justify-center group-hover:bg-${contact.color} group-hover:text-${contact.color}-foreground transition-smooth`}>
-                        <IconComponent className={`w-6 h-6 text-${contact.color} group-hover:text-${contact.color}-foreground transition-smooth`} />
+                      <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center group-hover:bg-teal group-hover:text-teal-foreground transition-smooth">
+                        <IconComponent className="w-6 h-6 text-teal group-hover:text-teal-foreground transition-smooth" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">{contact.label}</h3>
-                        <p className={`text-sm text-muted-foreground group-hover:text-${contact.color} transition-smooth`}>
+                        <p className="text-sm text-muted-foreground group-hover:text-teal transition-smooth">
                           {contact.value}
                         </p>
                       </div>
